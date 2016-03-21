@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[state_mst] (
+    [intglcode]  INT          IDENTITY (1, 1) NOT NULL,
+    [state]      VARCHAR (50) NULL,
+    [country_id] INT          NULL,
+    PRIMARY KEY CLUSTERED ([intglcode] ASC)
+);
+

@@ -1,0 +1,24 @@
+CREATE PROCEDURE [dbo].[update_registraion]
+	@intglcode	int	,
+	@firstname	varchar(50)	,	
+	@lastname	varchar(50)	,	
+	@emailid		varchar(50)	,	
+	@mobileno	varchar(50)	,	
+	@gender		varchar(50)	,	
+	@country		int			,	
+	@state		int			,	
+	@hobbies 	varchar(50)		,
+	@image	varchar(MAX)
+AS
+	update registraion_mst set
+	firstname	=@firstname ,
+	lastname	=@lastname	,
+	emailid		=@emailid	,
+	mobileno	=@mobileno	,
+	gender		=@gender	,	
+	country		=@country	,
+	state		=@state		,
+	hobbies     =@hobbies ,
+	image	    =@image	
+	where intglcode=@intglcode
+RETURN 0

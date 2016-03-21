@@ -1,0 +1,38 @@
+CREATE PROCEDURE [dbo].[insert_registraion]
+	@firstname	varchar(50)	,	
+	@lastname	varchar(50)	,	
+	@emailid		varchar(50)	,	
+	@mobileno	varchar(50)	,	
+	@gender		varchar(50)	,	
+	@country		int			,	
+	@state		int			,	
+	@hobbies 	varchar(50)	,
+	@image	varchar(MAX)
+	
+
+AS
+	insert into registraion_mst
+	(
+	firstname ,
+	lastname  ,
+	emailid	  ,
+	mobileno  ,
+	gender		,
+	country	  ,
+	state		,
+	hobbies ,
+	image	
+	)
+	values
+	(
+	@firstname	 ,
+	@lastname	 ,
+	@emailid	 ,
+	@mobileno	 ,
+	@gender		 ,
+	@country	 ,
+	@state		 ,
+	@hobbies   ,
+	@image	
+	)
+RETURN 0

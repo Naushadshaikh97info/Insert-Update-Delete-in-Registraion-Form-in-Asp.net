@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[country_mst] (
+    [intglcode] INT          IDENTITY (1, 1) NOT NULL,
+    [country]   VARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([intglcode] ASC)
+);
+

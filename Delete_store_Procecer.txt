@@ -1,0 +1,5 @@
+CREATE PROCEDURE [dbo].[delete_registraion]
+		@intglcode	int
+AS
+	delete from registraion_mst where intglcode=@intglcode
+RETURN 0
